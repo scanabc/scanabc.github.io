@@ -6,6 +6,7 @@
 git clone https://github.com/nkapu/webkapu.git
 cd webkapu
 ruby --version # needs to be > 2.0.0
+sudo apt-get install ruby-dev zlib1g-dev liblzma-dev
 sudo gem install bundler
 bundle install
 bundle exec jekyll serve # --watch is default after jekyll 2.4.0
