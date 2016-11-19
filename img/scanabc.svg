@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.656921387 21.0029907 9.22973633 0.869873047 22.4118652 0.869873047 31.0595093 21.0029907"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#72547C" x="0" y="0" width="200" height="200"></rect>
+        <text id="O" font-family="Avenir-Book, Avenir" font-size="225" font-weight="normal" fill="#FDC55D">
+            <tspan x="5" y="186">O</tspan>
+        </text>
+        <text id=".-copy" font-family="Avenir-Book, Avenir" font-size="153" font-weight="normal" fill="#FDC55D">
+            <tspan x="107" y="23.1000004">.</tspan>
+        </text>
+        <text id=".-copy" font-family="Avenir-Book, Avenir" font-size="153" font-weight="normal" fill="#FDC55D">
+            <tspan x="49" y="23.1000004">.</tspan>
+        </text>
+        <g id="Group" transform="translate(21.150002, -43.000000)">
+            <g id="O-Copy" transform="translate(62.000000, 62.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <text mask="url(#mask-2)" font-family="Avenir-Book, Avenir" font-size="225" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="-78.1500015" y="167">O</tspan>
+                </text>
+            </g>
+            <text id="A" font-family="Avenir-Book, Avenir" font-size="227" font-weight="normal" fill="#FFFFFF">
+                <tspan x="0.00999832153" y="227">A</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
