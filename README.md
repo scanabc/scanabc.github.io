@@ -3,8 +3,8 @@
 ## Editing and testing your own machine
 
 ```shell
-git clone https://github.com/nkapu/webkapu.git
-cd webkapu
+git clone https://github.com/scanabc/scanabc.github.io.git
+cd scanabc.github.io
 ruby --version # needs to be > 2.0.0
 sudo apt-get install ruby-dev zlib1g-dev liblzma-dev
 sudo gem install bundler
