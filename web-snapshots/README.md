@@ -1,24 +1,40 @@
 # Web snapshots
 
-Every month we celebrate the different achievements and events in an [all-hands](https://medium.com/@gokulrajaram/all-you-ever-wanted-to-know-about-all-hands-but-were-afraid-to-ask-b13f7b97f2d9#.jf3s99a6g)
-session meant for Scandinavian ABC startups. Before each all-hands,
-we pick a background picture to [scanabc.com](http://www.scanabc.com)
-webpages. The picture is from the life of one or more of the startups.
+Each month, we celebrate the achievements of Scandinavian ABC
+startups by picking a new background picture to the
+[scanabc.com](http://www.scanabc.com) webpage. We give the inside
+scoop of each picture below.
 
-## 2017-01
+## 2017-01 - Back to the Roots, Out to the World
+
+New year arrived and the Finns got a glimpse of the sunlight.
 
 ![2017-01 snapshot](2017-01-snapshot.jpg)
 
-New year arrived and the Finns got a glimpse of the sunlight.
-Just before the new year, we had a retreat in Pudasjärvi to get SensorFU started.
+At the end of the year we went back to the roots to finalize
+SensurFU plans. Picture is from Pudasjärvi [(map)](https://goo.gl/maps/7EAAAYZgcTp)
+, the home town for many of us. And a good place for a retreat.
 
-## 2016-12
+Pudasjärvi is in the vicinity of Oulu. In the 90s, it got proper
+Internet-access among the first small municipalities in Finland.
+Early exposure to the Internet gave a good base for youngsters
+to learn the perks of networking and security. Growing up, many
+moved to bigger cities and made cyber defense their career.
+Many of them work in Scandinavian ABC ecosystem.
+
+## 2016-12 - All of This Has Happened Before
+
+```All of this has happened before - and will happen again.```
 
 ![2016-12 snapshot](2016-12-snapshot.jpg)
 
-In 2014 we released a [video](https://www.youtube.com/watch?v=kWg3BXjtJAo&t=2s
-) which celebrated the successes of different
-nations who were applying the Finnish model for civilian cyber
-defense. In December 2016, Scandinavian ABC startups were working to
-bring updates to the model. So we used a screenshot of the video as a
-background.
+At the end of 2013 we released a [video](https://www.youtube.com/watch?v=kWg3BXjtJAo
+). The video celebrated the successes of different
+early adopters of the Finnish model for civilian cyber
+defense.
+
+At the end of 2016, the approaches talked in the video are now
+mainstream. Our eyes are set to things undone.
+In the spirit of Battlestar Galactica (2004) we
+used a screenshot of the video as a background: *All of this has
+happened before and will happen again.* [(YouTube clip)](https://youtu.be/6bOy3RNyWME)
