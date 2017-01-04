@@ -12,7 +12,7 @@ New year arrived and the Finns got a glimpse of the sunlight.
 ![2017-01 snapshot](2017-01-snapshot.jpg)
 
 At the end of the year we went back to the roots to finalize
-SensurFU plans. Picture is from Pudasjärvi [(map)](https://goo.gl/maps/7EAAAYZgcTp)
+SensurFu plans. Picture is from Pudasjärvi [(map)](https://goo.gl/maps/7EAAAYZgcTp)
 , the home town for many of us. And a good place for a retreat.
 
 Pudasjärvi is in the vicinity of Oulu. In the 90s, it got proper
