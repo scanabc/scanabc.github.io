@@ -34,9 +34,9 @@ career. Many of them work in Scandinavian ABC ecosystem.
 
 At the end of 2013 we released a [video](https://www.youtube.com/watch?v=kWg3BXjtJAo
 ) video celebrating the successes of cyber firefighters, who early
-on adopted the Finnish cyberfirefighting model.
-Now the model is mainstream, and we are working to push the
-envelope. Doing things undone, being the underdog. Feels like home.
+on adopted the Finnish model for their work.
+Now the model is mainstream, and we are pushing the
+envelope. Doing things undone, being the underdog again. Feels like home.
 
 In the spirit of Battlestar Galactica (2004) we
 used a screenshot of the video to remind us: *All of this has
