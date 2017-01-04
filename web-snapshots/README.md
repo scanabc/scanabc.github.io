@@ -7,14 +7,14 @@ webpages. The picture is from the life of one or more of the startups.
 
 ## 2017-01
 
-![2017-01 snapshot]](2017-01-snapshot.jpg)
+![2017-01 snapshot](2017-01-snapshot.jpg)
 
 New year arrived and the Finns got a glimpse of the sunlight.
 Just before the new year, we had a retreat in Pudasjärvi to get SensorFU started.
 
 ## 2016-12
 
-![2016-12 snapshot]](2016-12-snapshot.jpg)
+![2016-12 snapshot](2016-12-snapshot.jpg)
 
 In 2014 we released a [video](https://www.youtube.com/watch?v=kWg3BXjtJAo&t=2s
 ) which celebrated the successes of different
