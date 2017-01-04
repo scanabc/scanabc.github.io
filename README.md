@@ -1,28 +1,43 @@
-# Scanabc Website
+# Scandinavian ABC Website
 
-## Editing and testing your own machine
+We develop our [scanabc.com](http://www.scanabc.com) -webpage here.
+Contributors, check [CONTRIBUTING.md](CONTRIBUTING.md).
 
-```shell
-git clone https://github.com/scanabc/scanabc.github.io.git
-cd scanabc.github.io
-ruby --version # needs to be > 2.0.0
-sudo apt-get install ruby-dev zlib1g-dev liblzma-dev
-sudo gem install bundler
-bundle install
-bundle exec jekyll serve # --watch is default after jekyll 2.4.0
-```
+# Stories Behind the Background Pictures.
 
-Page will be as default at localhost:4000
+We celebrate the achievements of Scandinavian ABC
+startups each month by picking a new background picture to the
+[scanabc.com](http://www.scanabc.com) webpage.
 
-### Requirements
+## 2017-01 - Back to the Roots, Out to the World
 
-* Ruby >= 2.0.0
+New year arrived and the Finns got a glimpse of the sunlight.
 
-* [bundler](http://bundler.io/)
-  * ```gem install bundler```
+![2017-01 snapshot](web-snapshots/2017-01-snapshot.jpg)
 
-## This website is based on Agency Jekyll theme
+At the end of the year we went back to the roots to finalize
+SensurFu plans. Picture is from Pudasjärvi [(map)](https://goo.gl/maps/7EAAAYZgcTp)
+, the home town for many of us. And a good place for a retreat.
 
-* <https://github.com/y7kim/agency-jekyll-theme>
+Pudasjärvi is in the vicinity of Oulu. In the 90s, it got proper
+Internet-access among the first small municipalities in Finland.
+Early exposure to the Internet gave a good base for youngsters
+to learn the perks of networking and security. Growing up, those
+youngsters moved to bigger cities and made cyber defense their
+career. Many of them work in Scandinavian ABC ecosystem.
 
-* <https://startbootstrap.com/template-overviews/agency/>
+## 2016-12 - All of This Has Happened Before
+
+```All of this has happened before - and will happen again.```
+
+![2016-12 snapshot](web-snapshots/2016-12-snapshot.jpg)
+
+At the end of 2013 we released a [video](https://www.youtube.com/watch?v=kWg3BXjtJAo
+) video celebrating the successes of cyber firefighters, who early
+on adopted the Finnish cyberfirefighting model.
+Now the model is mainstream, and we are working to push the
+envelope. Doing things undone, being the underdog. Feels like home.
+
+In the spirit of Battlestar Galactica (2004) we
+used a screenshot of the video to remind us: *All of this has
+happened before and will happen again.* [(YouTube clip)](https://youtu.be/6bOy3RNyWME).
