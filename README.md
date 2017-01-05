@@ -5,8 +5,8 @@ Contributors, check [CONTRIBUTING.md](CONTRIBUTING.md).
 
 # Stories Behind the Background Pictures.
 
-We celebrate the achievements of Scandinavian ABC
-startups each month by picking a new background picture to the
+Occasionally we celebrate the achievements of Scandinavian ABC
+startups by picking a new background picture to the
 [scanabc.com](http://www.scanabc.com) webpage.
 
 ## 2017-01 - Back to the Roots, Out to the World
