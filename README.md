@@ -3,13 +3,24 @@
 We develop our [scanabc.com](http://www.scanabc.com) -webpage here.
 Contributors, check [CONTRIBUTING.md](CONTRIBUTING.md).
 
-# Stories Behind the Background Pictures.
+## Stories Behind the Background Pictures
 
 Occasionally we celebrate the achievements of Scandinavian ABC
 startups by picking a new background picture to the
 [scanabc.com](http://www.scanabc.com) webpage.
 
-## 2017-01 - Back to the Roots, Out to the World
+### 2017-03 - Full Speed Ahead
+
+[SensorFu](http://www.sensorfu.com/) is founded. Time to go full throttle!
+
+![2017-03 snapshot](web-snapshots/2017-03-snapshot.jpg)
+
+The day this picture was taken, @Turmi0 gently engaged a tree
+with his snowmobile. The result? 1400€ repair service bill.
+A couple of days later he completed the paperwork for
+SensorFu's initial funding.
+
+### 2017-01 - Back to the Roots, Out to the World
 
 New year arrived and the Finns got a glimpse of the sunlight.
 
@@ -26,7 +37,7 @@ to learn the perks of networking and security. Growing up, those
 youngsters moved to bigger cities and made cyber defense their
 career. Many of them work in Scandinavian ABC ecosystem.
 
-## 2016-12 - All of This Has Happened Before
+### 2016-12 - All of This Has Happened Before
 
 ```All of this has happened before - and will happen again.```
 
