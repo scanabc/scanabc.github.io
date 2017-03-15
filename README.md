@@ -11,7 +11,7 @@ startups by picking a new background picture to the
 
 ### 2017-03 - Full Speed Ahead
 
-[SensorFu](http://www.sensorfu.com/) is founded. Time to go full throttle!
+[SensorFu](http://www.sensorfu.com/) is founded. Time to go at full throttle!
 
 ![2017-03 snapshot](web-snapshots/2017-03-snapshot.jpg)
 
