@@ -21,6 +21,13 @@ h1, h2, h3, h4 {
   }
 }
 
+.maptext {
+  font-size: 1.1rem;
+}
+.story {
+  font-size: 1.4rem;
+  font-weight: 100;
+}
 .beacon {
   background-color: #000;
   color: #ffffff;
