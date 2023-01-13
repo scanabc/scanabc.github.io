@@ -1,2 +1,5 @@
 _site/
 Gemfile.lock
+.DS_STore
+.bundle
+vendor/
