@@ -3,6 +3,12 @@
 We develop our [scanabc.com](http://www.scanabc.com) -webpage here.
 Contributors, check [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Testing in Docker
+
+```shell
+docker run --rm --volume="$(pwd):/srv/jekyll" -it -p4000:4000 jekyll/jekyll jekyll serve
+```
+
 ## Stories Behind the Background Pictures
 
 Occasionally we celebrate the achievements of Scandinavian ABC
