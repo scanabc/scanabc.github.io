@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prevent 2026 - Yhteistyö vie meidät avaruuteen asti!</title>
+  <meta name="description" content="Prevent26 tarjoaa tietoturvakeskustelua ennen Disobeytä. 13.2. klo 09:15-13:30 Maria01, Lapinlahdenkatu 16, Helsinki" />
+  <meta name="author" content="ScanABC" />
+  <meta property="og:title" content="Prevent 2026 - Yhteistyö vie meidät avaruuteen asti!" />
+  <meta property="og:description" content="Prevent26 tarjoaa tietoturvakeskustelua ennen Disobeytä. 13.2. klo 09:15-13:30 Maria01, Lapinlahdenkatu 16, Helsinki" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://www.scanabc.com/prevent26/img/social-opengraph.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@scanabc" />
+  <meta name="twitter:image" content="http://www.scanabc.com/prevent26/img/social-opengraph.jpg" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #1e40af;
+      --primary-light: #3b82f6;
+      --background: #f8fafc;
+      --secondary: #e2e8f0;
+      --foreground: #0f172a;
+      --muted: #64748b;
+      --border: #cbd5e1;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background-color: var(--background);
+      color: var(--foreground);
+      line-height: 1.6;
+      font-size: 18px;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 60px 24px;
+      background: linear-gradient(rgba(0, 20, 60, 0.7), rgba(0, 40, 80, 0.8)), url('majakka-avaruudessa.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-subtitle {
+      font-size: 1.6rem;
+      opacity: 0.9;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+
+    .hero-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-detail {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .map-linksd {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .map-links a {
+      color: white;
+      opacity: 0.85;
+      font-size: 1.2rem;
+      text-decoration: underline;
+      transition: opacity 0.2s;
+    }
+
+    .map-links a:hover {
+      opacity: 1;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: var(--primary);
+      padding: 18px 50px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background: #f1f5f9;
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-light);
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 24px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    /* About Section */
+    .about-content {
+      max-width: 900px;
+    }
+
+    .about-text {
+      font-size: 1.5rem;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .about-text p {
+      margin-bottom: 20px;
+    }
+
+    .about-text .highlight {
+      font-weight: 500;
+      color: var(--foreground);
+    }
+
+    .location-card {
+      background: var(--secondary);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+    }
+
+    .location-info p {
+      margin: 4px 0;
+      font-size: 1.2rem;
+    }
+
+    .location-info .venue-name {
+      font-weight: 600;
+      color: var(--foreground);
+    }
+
+    .location-info .venue-details {
+      color: var(--muted);
+    }
+
+    /* Program Section */
+    .bg-secondary {
+      background: var(--secondary);
+    }
+
+    .program-list {
+      max-width: 800px;
+    }
+
+    .program-group {
+      background: white;
+      border-radius: 12px;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .program-group-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 12px 16px 8px;
+      border-bottom: 1px solid var(--secondary);
+      margin-bottom: 8px;
+    }
+
+    .program-item {
+      padding: 16px 16px;
+      display: flex;
+      gap: 20px;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+
+    .program-item:hover {
+      background: var(--background);
+    }
+
+    .program-item + .program-item {
+      border-top: 1px solid var(--secondary);
+    }
+
+    .program-time {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 130px;
+      font-size: 1.15rem;
+    }
+
+    .program-content {
+      flex: 1;
+    }
+
+    .program-title {
+      font-weight: 600;
+      color: var(--foreground);
+      font-size: 1.2rem;
+    }
+
+    .program-speaker {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-top: 4px;
+    }
+
+    .program-organization {
+      color: var(--muted);
+      font-size: 1.05rem;
+      font-style: italic;
+    }
+
+    .program-description {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-top: 4px;
+    }
+
+    .read-more-link {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--primary);
+      text-decoration: none;
+      margin-left: 12px;
+      transition: color 0.2s;
+    }
+
+    .read-more-link:hover {
+      color: var(--primary-light);
+      text-decoration: underline;
+    }
+
+    /* Registration Section */
+    .registration-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--secondary);
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      font-size: 1.6rem;
+      margin-bottom: 24px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 1.15rem;
+      line-height: 1.7;
+    }
+
+    .card .btn {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .card .note {
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    /* AI Hackathon Section */
+    .hackathon-section {
+      background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+      color: white;
+    }
+
+    .hackathon-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hackathon-content h2 {
+      font-size: 1.8rem;
+      line-height: 1.3;
+      margin-bottom: 40px;
+    }
+
+    .hackathon-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .hackathon-text {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      opacity: 0.9;
+    }
+
+    .hackathon-text p {
+      margin-bottom: 16px;
+    }
+
+    .hackathon-text .price {
+      font-weight: 600;
+      color: #60a5fa;
+    }
+
+    .hackathon-cta {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .hackathon-cta .btn {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .hackathon-cta .btn:hover {
+      background: #60a5fa;
+    }
+
+    @media (max-width: 768px) {
+      .hackathon-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .hackathon-content h2 {
+        font-size: 1.4rem;
+      }
+    }
+
+    /* Footer */
+    footer {
+      background: var(--foreground);
+      color: var(--secondary);
+      padding: 50px 24px;
+      text-align: center;
+    }
+
+    footer h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    footer .tagline {
+      opacity: 0.8;
+      margin-bottom: 16px;
+      font-size: 1.1rem;
+    }
+
+    footer .sponsors {
+      opacity: 0.6;
+      font-size: 0.95rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.3rem;
+      }
+
+      .hero-details {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .map-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .registration-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .program-item {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .program-time {
+        min-width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Prevent 2026</h1>
+      <p class="hero-subtitle">Yhteistyö vie meidät avaruuteen asti!</p>
+      <div class="hero-details">
+        <div class="hero-detail">
+          <span>📅</span>
+          <span>pe 13.2.2026</span>
+        </div>
+        <div class="hero-detail">
+          <span>🕘</span>
+          <span>8:30 aamuvirkuille, 9:15 kaikille </span>
+        </div>
+      </div>
+      <div class="hero-details">
+        <div class="hero-detail">
+          <span>📍</span>
+          <span class="map-links"><a href="https://maps.google.com/?q=Maria01,+Lapinlahdenkatu+16,+Helsinki" target="_blank">Maria01 building 3, Lapinlahdenkatu 16, 00180 Helsinki</a></span>
+        </div>
+      </div>
+      <a href="https://forms.gle/mBZ1qLGwwv67kGpc7" target="_blank" class="btn">Ilmoittaudu mukaan</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section>
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Järjestämme vuosittaisen Prevent-tapahtuman jälleen 13.2.2026. Viimeksi iloitsimme 
+            Suomalainesen kyberin leviämistä maailmalle. Tällä kertaa juhlistamme suomalaisen
+            kyberin menoa avaruuteen, unohtamatta kolmatta kievä auringosta, jossa pohjolan viilein 
+            kyber leviää maailmalle arktisen purkauksen lailla. Valoitamme, käytännön esimerkkien
+            avulla, miten yhteistyö julkisen ja yksityisen sektorin välillä 
+            ei heijastele ainoastaan Suomen, vaan konkreettisesti koko maailman kyberturvallisuuteen.
+          </p>
+          <p>
+            Tapahtuman mahdollistavat Arctic Security, Semantti, SensorFu, SensorFleet,
+            Badrap, Xiphera, Remod, Test of Things ja Ääkköset. Laskit oikein, listalla on jälleen uusi yritys!
+          </p>
+        </div>
+        <div class="location-card">
+          <div class="location-info">
+            <p class="venue-name">📍 Maria01, Building 3</p>
+            <p class="venue-details">Lars Sonck Venue (1. kerros)</p>
+            <p class="venue-details">Lapinlahdenkatu 16, 00180 Helsinki</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program Section -->
+  <section class="bg-secondary">
+    <div class="container">
+      <h2>Ohjelma</h2>
+      <div class="program-list">
+        
+        <!-- Morning Welcome -->
+        <div class="program-group">
+          <div class="program-group-title">Herätys</div>
+          <div class="program-item">
+            <div class="program-time">8:30–9:15</div>
+            <div class="program-content">
+              <div class="program-title">Ovet aukeavat, kahavia, teetä ja pientä aamupalaa tarjolla </div>
+            </div>
+          </div>
+          <div class="program-item">
+            <div class="program-time">9:15–9:20</div>
+            <div class="program-content">
+              <div class="program-title">Tervetuloa</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Session: Kiertorata -->
+        <div class="program-group">
+          <div class="program-group-title">Kiertorata</div>
+          <div class="program-item">
+            <div class="program-time">9:20–9:40</div>
+            <div class="program-content">
+              <div class="program-title">Kyberturvallisuus kasvuyrityksessä, jonka OT-järjestelmät ovat avaruudessa</div>
+              <div class="program-organization">ICEYE</div>
+            </div>
+          </div>
+          <div class="program-item">
+            <div class="program-time">9:40–9:50</div>
+            <div class="program-content">
+              <div class="program-title">Valokeilassa: Semantti ja SensorFu</div>
+            </div>
+          </div>
+          <div class="program-item">
+            <div class="program-time">9:50–10:10</div>
+            <div class="program-content">
+              <div class="program-title">Tietoturvallisuus avaruudessa</div>
+              <div class="program-speaker">Petri Jehkonen, Xiphera</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Break: Santsikuppi -->
+        <div class="program-group">
+          <div class="program-group-title">Kahavia</div>
+          <div class="program-item">
+            <div class="program-time">10:10–10:15</div>
+            <div class="program-content">
+              <div class="program-title">Santsikuppi</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Session: PPP -->
+        <div class="program-group">
+          <div class="program-group-title">PPP - Public-Private Partnership</div>
+          <div class="program-item">
+            <div class="program-time">10:15–10:35</div>
+            <div class="program-content">
+              <div class="program-title">Yksityisen sektorin rooli valtion kyberpuolustuksessa</div>
+              <div class="program-speaker">Tuomo Rusila, Puolustusministeriö</div>
+            </div>
+          </div>
+          <div class="program-item">
+            <div class="program-time">10:35–10:50</div>
+            <div class="program-content">
+              <div class="program-title">Valokeilassa: Arctic Security, Badrap, Remod</div>
+            </div>
+          </div>
+          <div class="program-item">
+            <div class="program-time">10:50–11:10</div>
+            <div class="program-content">
+              <div class="program-title">PPP aiemmin: kansallisia tuloksia, kansainvälistä vaikutusta. Mitä seuraavaksi? Case Kevyt-HAVARO.</div>
+              <div class="program-speaker">TBA, Kyberturvallisuuskeskus</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coffee Break -->
+        <div class="program-group">
+          <div class="program-item">
+            <div class="program-time">11:10–11:35</div>
+            <div class="program-content">
+              <div class="program-title">Kahavia ja hyviä keskusteluja</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Session: Paluu maanpinnalle -->
+        <div class="program-group">
+          <div class="program-group-title">Paluu maanpinnalle - perusasiat ovat salainen ainesosa</div>
+          <div class="program-item">
+            <div class="program-time">11:35–11:55</div>
+            <div class="program-content">
+              <div class="program-title">OT Asset Management: Did We Finally Kill The Werewolf?</div>
+              <div class="program-speaker">Ross Bailey, Fortum</div>
+            </div>
+          </div>
+          <div class="program-item">
+            <div class="program-time">11:55–12:15</div>
+            <div class="program-content">
+              <div class="program-title">Test of Things: Engineering to Compliance, CRA and IEC 62443-4</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lunch & Networking -->
+        <div class="program-group">
+          <div class="program-group-title">Lounas ja verkostoituminen</div>
+          <div class="program-item">
+            <div class="program-time">12:15–13:30</div>
+            <div class="program-content">
+              <div class="program-title">Pizzaa ja minglausta</div>
+              <div class="program-description">Vapaata seurustelua, Disobey-lipun saaneet voivat siirtyä Merikaapelihallille</div>
+            </div>
+          </div>
+          <div class="program-item">
+            <div class="program-time">13:30–15:30</div>
+            <div class="program-content">
+              <div class="program-title">Free AI Deception Training <a href="#ai-training" class="read-more-link">Read more →</a></div>
+              <div class="program-description">Didn't get Disobey ticket? Join us and learn how to deceive AI. This is for all skill levels. </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Section -->
+  <section>
+    <div class="container">
+      <div class="registration-grid">
+        <div class="card">
+          <h2>Ilmoittaudu</h2>
+          <a href="https://forms.gle/mBZ1qLGwwv67kGpc7" target="_blank" class="btn btn-primary">🔗 Ilmoittaudu mukaan</a>
+          <p class="note">Paikkoja on rajoitetusti</p>
+        </div>
+        <div class="card">
+          <h2>Näin saavut</h2>
+          <p>
+            Tapahtuma järjestetään Maria01:n rakennuksessa 3, Lars Sonck Venuessa (1. kerros). 
+            Kävele Building 3:n pääovesta sisään ja seuraa Prevent-opasteita.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Hackathon Section -->
+  <section id="ai-training" class="hackathon-section">
+    <div class="container">
+      <div class="hackathon-content">
+        <h2>Agentic AI Under Fire: A Hands-on Deception Training for Key Stakeholders in AI Adoption</h2>
+        <div class="hackathon-grid">
+          <div class="hackathon-text">
+            <p>
+              Deciding on AI for your business processes? Responsible for the risks involved? Or just curious about tricking generative AIs and protective guardrails?
+              Train now on deception of generative AI and LLM agents in an immersive, plot-driven challenge!
+            </p>
+          </div>
+          <div class="hackathon-text">
+            <p>
+              This training is designed for all skill levels. It offers both social and technical challenges. Facilitated by the team behind the world's first AI-breaking hackathons.
+            </p>
+
+          </div>
+        </div>
+        <div class="hackathon-cta">
+          <a href="https://forms.gle/LYJUQBkKaqd4BHvu6" target="_blank" class="btn">🤖 Sign up to AI Hackathon</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Prevent 2026</h3>
+    <p class="tagline">Yhteistyö vie meidät avaruuteen!</p>
+    <p class="sponsors">Mahdollistajat: Arctic Security, Semantti, SensorFu, SensorFleet, Badrap, Xiphera, Remod, Test of Things, Ääkköset</p>
+  </footer>
+</body>
+</html>
