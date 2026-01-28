@@ -1,39 +1,17 @@
-# Scanabc Website
+# Contributing
 
-## Editing and testing your own machine
+Here is an example flow to contribute.
 
-```shell
-git clone https://github.com/scanabc/scanabc.github.io.git
-cd scanabc.github.io
+1. Open the project in VS Code.
+2. You should see a notification asking to "Reopen in Container". Click it.
+3. To start the server, run the following command in the VS Code integrated terminal:
 
-# On linux
-ruby --version # needs to be > 2.0.0
-sudo apt-get install ruby-dev zlib1g-dev liblzma-dev
+    ```console
+    bundle exec jekyll serve --host 0.0.0.0 --port 8082
+    ```
 
-# On Mac
-brew install chruby ruby-install xz
-## https://www.rubyonmac.dev/how-to-install-ruby-on-macos-12-6-apple-silicon
-ruby-install ruby -- --enable-shared
-## for this terminal only
-source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh
-source $(brew --prefix)/opt/chruby/share/chruby/auto.sh
-chruby ruby-3.1.2
-ruby --version
-
-# On all platforms
-gem install bundler
-bundle install
-bundle exec jekyll serve # --watch is default after jekyll 2.4.0
-```
-
-Page will be as default at localhost:4000
-
-### Requirements
-
-* Ruby >= 2.0.0
-
-* [bundler](http://bundler.io/)
-  * ```gem install bundler```
+4. Open your browser and navigate to `http://localhost:8082` to view the site.
+5. Edit
 
 ## This website is based on Agency Jekyll theme
 

@@ -1,0 +1,17 @@
+{
+  "name": "Jekyll (Agency Theme)",
+  "image": "mcr.microsoft.com/devcontainers/ruby:3.2",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:1": {},
+    "ghcr.io/devcontainers/features/node:1": {"version": "lts"}
+  },
+  "forwardPorts": [8082],
+  "portsAttributes": {
+    "8082": {
+      "label": "Jekyll Preview",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "gem install bundler && bundle config set --local path 'vendor/bundle' && bundle install",
+  "remoteUser": "vscode"
+}
