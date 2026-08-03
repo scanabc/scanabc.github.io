@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScanABC Tuparit - Oulusta maailmalle!</title>
+  <meta name="description" content="Tervetuloa juhlistamaan ScanABC-yritysten uutta toimistoa! 20.08.2026 klo 14:00, Teknologiantie 16, 90590 Oulu" />
+  <meta name="author" content="ScanABC" />
+  <meta property="og:title" content="Tuparit26 - ScanABC-yritysten tupaantuliaiset" />
+  <meta property="og:description" content="Tervetuloa juhlistamaan ScanABC-yritysten uutta toimistoa! 20.08.2026 klo 14:00" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.scanabc.com/tuparit26/img/social-opengraph.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@scanabc" />
+  <meta name="twitter:image" content="https://www.scanabc.com/tuparit26/img/social-opengraph.jpg" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --primary: #1e40af;
+      --primary-light: #3b82f6;
+      --background: #f8fafc;
+      --secondary: #e2e8f0;
+      --foreground: #0f172a;
+      --muted: #64748b;
+      --border: #cbd5e1;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background-color: var(--background);
+      color: var(--foreground);
+      line-height: 1.6;
+      font-size: 18px;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 60px 24px;
+      background:
+        linear-gradient(135deg, rgba(20, 45, 80, 0.85) 0%, rgba(15, 35, 95, 0.92) 55%, rgba(29, 78, 160, 0.9) 100%),
+        url('img/toimisto.jpg') center center / cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-subtitle {
+      font-size: 1.6rem;
+      opacity: 0.9;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+
+    .hero-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    .hero-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: var(--primary);
+      padding: 18px 50px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background: #f1f5f9;
+      transform: translateY(-2px);
+    }
+
+    /* Sections */
+    section {
+      padding: 40px 24px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* About Section */
+    .about-text {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.3rem;
+      color: var(--muted);
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    .about-text p {
+      margin-bottom: 20px;
+    }
+
+    .about-text .highlight {
+      font-weight: 500;
+      color: var(--foreground);
+    }
+
+    .bg-secondary {
+      background: var(--secondary);
+    }
+
+    /* Info Section */
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--secondary);
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 1.15rem;
+      line-height: 1.7;
+    }
+
+    .card .venue-name {
+      font-weight: 600;
+      color: var(--foreground);
+      font-size: 1.2rem;
+      margin-bottom: 4px;
+    }
+
+    /* Sign-up Section */
+    .signup-box {
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      border: 2px dashed var(--border);
+      border-radius: 12px;
+      padding: 60px 40px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 1.15rem;
+    }
+
+    .signup-box strong {
+      display: block;
+      color: var(--foreground);
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--foreground);
+      color: var(--secondary);
+      padding: 50px 24px;
+      text-align: center;
+    }
+
+    footer h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    footer .tagline {
+      opacity: 0.8;
+      font-size: 1.1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.3rem;
+      }
+
+      .hero-details {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>ScanABC tuparit</h1>
+      <p class="hero-subtitle">Oulusta maailmalle</p>
+      <p class="hero-subtitle" style="opacity: 0.85; font-size: 1.3rem; margin-top: 15px;">
+        Tervetuloa juhlistamaan 
+        <a href="/#portfolio" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; transition: opacity 0.2s; cursor: pointer;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">ScanABC-yritysten</a>
+        uutta toimistoa!</p>
+
+      <div class="hero-details">
+        <div class="hero-detail">📅 20.08.2026</div>
+        <div class="hero-detail">🕐 klo 14:00–17:00</div>
+        <div class="hero-detail">📍 Teknologiantie 16, 90590 Oulu</div>
+      </div>
+
+      <a href="#ilmoittaudu" class="btn">Ilmoittaudu mukaan</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section>
+    <div class="container">
+      <div class="about-text">
+        <p>
+          ScanABC-yritysten toiminta kasvaa vauhdilla: mukaan tulee uusia yrityksiä, ja jo mukana
+          olevien työntekijämäärät kasvavat. Kasvusta huolimatta haluamme pitää kiinni
+          tiiviistä ja innovatiivisesta yhteisöstä sekä avoimesta kulttuurista, joka huomioi
+          myös lähialueidemme opiskelijat ja yritykset.
+        </p>
+        <p style="margin-top: 20px; font-weight: 500; color: var(--foreground);">
+          📌 Tilaisuus alkaa <strong>14:00</strong> • Yritystarinoita <strong>15:00</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Tuparit26</h3>
+    <p class="tagline"><a href="/#portfolio" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; transition: opacity 0.2s; cursor: pointer;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">ScanABC-yritysten</a> uuden toimiston tupaantuliaiset</p>
+  </footer>
+</body>
+</html>
