@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ScanABC Tuparit - Oulusta maailmalle!</title>
+  <title>Kybertuparit - Oulusta maailmalle!</title>
   <meta name="description" content="Tervetuloa juhlistamaan ScanABC-yritysten uutta toimistoa! 20.08.2026 klo 14:00, Teknologiantie 16, 90590 Oulu" />
   <meta name="author" content="ScanABC" />
   <meta property="og:title" content="Tuparit26 - ScanABC-yritysten tupaantuliaiset" />
@@ -143,6 +143,31 @@
       color: var(--foreground);
     }
 
+    .schedule {
+      max-width: 600px;
+      margin: 30px auto 0;
+      text-align: left;
+    }
+
+    .schedule-item {
+      display: flex;
+      gap: 16px;
+      align-items: baseline;
+      padding: 14px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .schedule-time {
+      flex: 0 0 70px;
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 1.15rem;
+    }
+
+    .schedule-text {
+      color: var(--foreground);
+    }
+
     .bg-secondary {
       background: var(--secondary);
     }
@@ -250,7 +275,7 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <h1>ScanABC tuparit</h1>
+      <h1>Kybertuparit</h1>
       <p class="hero-subtitle">Oulusta maailmalle</p>
       <p class="hero-subtitle" style="opacity: 0.85; font-size: 1.3rem; margin-top: 15px;">
         Tervetuloa juhlistamaan 
@@ -277,17 +302,21 @@
           tiiviistä ja innovatiivisesta yhteisöstä sekä avoimesta kulttuurista, joka huomioi
           myös lähialueidemme opiskelijat ja yritykset.
         </p>
-        <p style="margin-top: 20px; font-weight: 500; color: var(--foreground);">
-          📌 Tilaisuus alkaa <strong>14:00</strong> • Yritystarinoita <strong>15:00</strong>
-        </p>
+        <div class="schedule">
+          <div class="schedule-item">
+            <span class="schedule-time">14:00</span>
+            <span class="schedule-text">Ovet aukeavat – tarjolla kahvia, teetä, tuoretta munkkia ja virkistäviä keskusteluja</span>
+          </div>
+          <div class="schedule-item">
+            <span class="schedule-time">15:00</span>
+            <span class="schedule-text">Yritystarinoita</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <h3>Tuparit26</h3>
-    <p class="tagline"><a href="/#portfolio" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; transition: opacity 0.2s; cursor: pointer;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">ScanABC-yritysten</a> uuden toimiston tupaantuliaiset</p>
-  </footer>
+  <footer></footer>
 </body>
 </html>
