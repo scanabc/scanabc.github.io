@@ -107,6 +107,44 @@
       transform: translateY(-2px);
     }
 
+    .hero-logos-section {
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .hero-logos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Every logo gets the same slot size regardless of its own aspect
+       ratio, so a wide logo (Remod, SensorFu) and a squarish one
+       (Badrap, SensorFleet) end up visually the same weight. */
+    .hero-logos a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      height: 56px;
+      opacity: 0.85;
+      transition: opacity 0.2s;
+    }
+
+    .hero-logos a:hover {
+      opacity: 1;
+    }
+
+    .hero-logos img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+
     /* Sections */
     section {
       padding: 40px 24px;
@@ -152,7 +190,7 @@
     .schedule-item {
       display: flex;
       gap: 16px;
-      align-items: baseline;
+      align-items: flex-start;
       padding: 14px 0;
       border-top: 1px solid var(--border);
     }
@@ -165,7 +203,65 @@
     }
 
     .schedule-text {
+      flex: 1;
       color: var(--foreground);
+    }
+
+    .talk-list {
+      list-style: none;
+      counter-reset: talk;
+      /* pull back by the schedule-time column + gap so the numbers
+         line up with the time labels above */
+      margin: 16px 0 0 -86px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .talk-list li {
+      counter-increment: talk;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .talk-list li::before {
+      content: counter(talk);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 22px;
+      width: 22px;
+      height: 22px;
+      box-sizing: border-box;
+      border: 1.5px solid var(--primary);
+      border-radius: 5px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      position: relative;
+      top: 5px; /* <-- turn this knob to nudge the box up/down vs. the title text */
+    }
+
+    .talk-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .talk-title {
+      color: var(--foreground);
+      font-size: 1.05rem;
+      line-height: 1.4;
+    }
+
+    .talk-company {
+      margin-top: 4px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--muted);
     }
 
     .bg-secondary {
@@ -272,6 +368,24 @@
     </div>
   </section>
 
+  <!-- Logos Section -->
+  <section class="hero-logos-section">
+    <div class="hero-logos">
+      <a href="https://sensorfu.com/" target="_blank" rel="noopener" title="SensorFu">
+        <img src="img/sensorfu.png" alt="SensorFu logo">
+      </a>
+      <a href="https://sensorfleet.com/" target="_blank" rel="noopener" title="SensorFleet">
+        <img src="img/sensorfleet.svg" alt="SensorFleet logo">
+      </a>
+      <a href="https://badrap.io/" target="_blank" rel="noopener" title="Badrap">
+        <img src="img/badrap.png" alt="Badrap logo">
+      </a>
+      <a href="https://remod.fi/" target="_blank" rel="noopener" title="Remod">
+        <img src="img/remodlogo.svg" alt="Remod logo">
+      </a>
+    </div>
+  </section>
+
   <!-- About Section -->
   <section>
     <div class="container">
@@ -289,7 +403,15 @@
           </div>
           <div class="schedule-item">
             <span class="schedule-time">15:00</span>
-            <span class="schedule-text">Yritystarinoita</span>
+            <div class="schedule-text">
+              Yritystarinoita
+              <ul class="talk-list">
+                <li><div class="talk-body"><span class="talk-title">Miten "tee perusasiat kunnolla" -viesti toimii kyberin hyperboliassa. </span><span class="talk-company">SensorFu</span></div></li>
+                <li><div class="talk-body"><span class="talk-title">Avoimet ja läpinäkyvyyteen perustuvat sensorit suljettujen taika-applianssien maailmassa.</span><span class="talk-company">SensorFleet</span></div></li>
+                <li><div class="talk-body"><span class="talk-title">Kuinka autan AI:ta varastamaan työni, jotta saamme kyberin skaalaamaan</span><span class="talk-company">Jani @ Badrap</span></div></li>
+                <li><div class="talk-body"><span class="talk-title">Miten yritykset saadaan pysymään kaidalla polulla turvallisten laitteiden vaatimusviidakossa </span><span class="talk-company">Test of Things</span></div></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
