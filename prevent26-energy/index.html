@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prevent: Energy - Cyber resilience for the energy sector</title>
+  <meta name="description" content="Prevent: Energy brings together the energy sector for an evening of cyber security talks. 28.10.2026, 16:30-19:00, Maria01, Lapinlahdenkatu 16, Helsinki." />
+  <meta name="author" content="ScanABC" />
+  <meta property="og:title" content="Prevent: Energy - Cyber resilience for the energy sector" />
+  <meta property="og:description" content="Prevent: Energy brings together the energy sector for an evening of cyber security talks. 28.10.2026, 16:30-19:00, Maria01, Helsinki." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.scanabc.com/prevent26-energy/img/hero-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@scanabc" />
+  <meta name="twitter:image" content="https://www.scanabc.com/prevent26-energy/img/hero-image.jpg" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --primary: #1e40af;
+      --primary-light: #3b82f6;
+      --background: #f8fafc;
+      --secondary: #e2e8f0;
+      --foreground: #0f172a;
+      --muted: #64748b;
+      --border: #cbd5e1;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background-color: var(--background);
+      color: var(--foreground);
+      line-height: 1.6;
+      font-size: 18px;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 60px 24px;
+      background: linear-gradient(to bottom, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.95)), url('img/hero-image.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-subtitle {
+      font-size: 1.6rem;
+      opacity: 0.9;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+
+    .hero-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    .hero-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: var(--primary);
+      padding: 18px 50px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .hero-content .btn + .btn {
+      margin-left: 12px;
+    }
+
+    .btn:hover {
+      background: #f1f5f9;
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-light);
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 24px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* About Section */
+    .about-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .about-text {
+      font-size: 1.3rem;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .about-text p {
+      margin-bottom: 20px;
+    }
+
+    .about-text .highlight {
+      font-weight: 500;
+      color: var(--foreground);
+    }
+
+    .about-text .event-name {
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    /* Program Section */
+    .bg-secondary {
+      background: var(--secondary);
+    }
+
+    .program-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .program-group {
+      background: white;
+      border-radius: 12px;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .program-item {
+      padding: 16px 16px;
+      display: flex;
+      gap: 20px;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+
+    .program-item:hover {
+      background: var(--background);
+    }
+
+    .program-item + .program-item {
+      border-top: 1px solid var(--secondary);
+    }
+
+    .program-time {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 130px;
+      font-size: 1.15rem;
+    }
+
+    .program-content {
+      flex: 1;
+    }
+
+    .program-title {
+      font-weight: 600;
+      color: var(--foreground);
+      font-size: 1.2rem;
+    }
+
+    .program-speaker {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-top: 4px;
+    }
+
+    .program-description {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-top: 4px;
+    }
+
+    /* Logos */
+    .section-eyebrow {
+      margin-bottom: 22px;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    footer .section-eyebrow {
+      color: inherit;
+      opacity: 0.6;
+      margin-top: 8px;
+    }
+
+    .logos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logos a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 170px;
+      height: 92px;
+      padding: 20px 24px;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    }
+
+    .logos a:hover {
+      border-color: #bfdbfe;
+      box-shadow: 0 10px 24px rgba(30, 64, 175, 0.12);
+      transform: translateY(-3px);
+    }
+
+    .logos img {
+      max-width: 100%;
+      max-height: 54px;
+      width: auto;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .logos {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 170px));
+      }
+
+      .logos a {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .logos {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Registration Section */
+    .registration-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--secondary);
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      font-size: 1.6rem;
+      margin-bottom: 24px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 1.15rem;
+      line-height: 1.7;
+    }
+
+    .card .btn {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .card .note {
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--foreground);
+      color: var(--secondary);
+      padding: 50px 24px;
+      text-align: center;
+    }
+
+    footer h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    footer .tagline {
+      opacity: 0.8;
+      margin: 0 auto 16px;
+      font-size: 1.1rem;
+      max-width: 700px;
+    }
+
+    footer .tagline a {
+      color: inherit;
+      text-decoration: underline;
+    }
+
+    footer .tagline a:hover {
+      opacity: 0.8;
+    }
+
+    footer .sponsors {
+      opacity: 0.6;
+      font-size: 0.95rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.3rem;
+      }
+
+      .hero-details {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .registration-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .program-item {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .program-time {
+        min-width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Prevent 2026: Energy Edition</h1>
+      <p class="hero-subtitle">Prevent harm by Getting Cyber Things Done in the energy sector</p>
+
+      <div class="hero-details">
+        <div class="hero-detail">📅 28.10.2026</div>
+        <div class="hero-detail">🕐 16:30-19:00</div>
+        <div class="hero-detail">📍 Maria01, Lars Sonck Venue, Helsinki</div>
+      </div>
+
+      <a href="https://2ecmj.share.hsforms.com/28al0yahYRhmL-lG8mHhpdA" target="_blank" class="btn btn-primary">Register</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section>
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Building resilience in the energy sector can sometimes feel daunting, but there is no reason to
+            freeze in our tracks. <span class="event-name">Prevent: Energy</span> brings together impact-driven
+            professionals from the energy sector, committed to ensuring nobody is left out in the cold.
+            Join us for an energizing evening where industry peers will discuss lessons learned, share
+            their recipes for getting things done, and spark new ideas to strengthen our future.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program Section -->
+  <section class="bg-secondary">
+    <div class="container">
+      <h2>Program</h2>
+      <div class="program-list">
+
+        <div class="program-group">
+          <div class="program-item">
+            <div class="program-time">16:30–17:00</div>
+            <div class="program-content">
+              <div class="program-title">Registration</div>
+            </div>
+          </div>
+          <div class="program-item">
+            <div class="program-time">17:00</div>
+            <div class="program-content">
+              <div class="program-title">Opening words</div>
+            </div>
+          </div>
+          <div class="program-item">
+            <div class="program-time">17:05–17:30</div>
+            <div class="program-content">
+              <div class="program-title">Keynote</div>
+              <div class="program-speaker">Robert M. Lee, CEO, Dragos; Lt. Col., 91st Battalion, Virginia National Guard</div>
+            </div>
+          </div>
+          <div class="program-item">
+            <div class="program-time">17:30–18:00</div>
+            <div class="program-content">
+              <div class="program-title">Panel: Turning hopes, goals and plans into accomplishments. Are we getting things done? How can we get things done?</div>
+              <div class="program-speaker">We will reflect these topics via recent events</div>
+            </div>
+          </div>
+          <div class="program-item">
+            <div class="program-time">18:00–19:00</div>
+            <div class="program-content">
+              <div class="program-title">Networking</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Section -->
+  <section>
+    <div class="container">
+      <div class="registration-grid">
+        <div class="card">
+          <h2>Registration</h2>
+          <a href="https://2ecmj.share.hsforms.com/28al0yahYRhmL-lG8mHhpdA" target="_blank" class="btn btn-primary">Register</a>
+          <p class="note">Register now, we have limited seats.</p>
+        </div>
+        <div class="card">
+          <h2>How to get there</h2>
+          <p>
+            The event is held at Maria01, building 3, Lars Sonck Venue (1st floor),
+            Lapinlahdenkatu 16, Helsinki. Walk in through the building 3 main entrance
+            and follow the signs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Prevent: Energy</h3>
+    <p class="tagline">Participants value Prevent for its actionable focus. As our audience expands,
+      we're preserving that value by avoiding broad, generic tracks—hence Prevent: Energy, an edition
+      built exclusively for the energy sector.</p>
+    <p class="section-eyebrow">The event is organized by these cybersecurity companies</p>
+    <div class="logos">
+      <a href="https://arcticsecurity.com/" target="_blank" rel="noopener" title="Arctic Security">
+        <img src="img/arctic-security.svg" alt="Arctic Security logo">
+      </a>
+      <a href="https://badrap.io/" target="_blank" rel="noopener" title="Badrap">
+        <img src="img/badrap.png" alt="Badrap logo">
+      </a>
+      <a href="https://sensorfleet.com/" target="_blank" rel="noopener" title="SensorFleet">
+        <img src="img/sensorfleet.svg" alt="SensorFleet logo">
+      </a>
+      <a href="https://sensorfu.com/" target="_blank" rel="noopener" title="SensorFu">
+        <img src="img/sensorfu.png" alt="SensorFu logo">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
