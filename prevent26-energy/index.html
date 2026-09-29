@@ -220,6 +220,92 @@
       margin-top: 4px;
     }
 
+    .panel-label {
+      display: table;
+      margin-bottom: 4px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: white;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .panelists {
+      list-style: none;
+      margin: 12px 0 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 10px;
+    }
+
+    .panelists .panelist {
+      height: 100%;
+    }
+
+    .panelist {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      border: 1px solid var(--secondary);
+      border-radius: 10px;
+      background: white;
+      color: inherit;
+      text-decoration: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .panelist:hover,
+    .panelist:focus-visible {
+      border-color: var(--primary-light);
+      box-shadow: 0 2px 10px rgba(30, 64, 175, 0.1);
+    }
+
+    .panelist-avatar {
+      flex: none;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: var(--secondary);
+    }
+
+    .panelist-info {
+      flex: 1;
+      min-width: 0;
+      line-height: 1.35;
+    }
+
+    .panelist-name {
+      display: block;
+      color: var(--foreground);
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+
+    .panelist-role {
+      display: block;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .panelist-linkedin {
+      flex: none;
+      width: 18px;
+      height: 18px;
+      fill: var(--muted);
+      transition: fill 0.2s;
+    }
+
+    .panelist:hover .panelist-linkedin,
+    .panelist:focus-visible .panelist-linkedin {
+      fill: #0a66c2;
+    }
+
     .program-description {
       color: var(--muted);
       font-size: 1.1rem;
@@ -479,6 +565,49 @@
             <div class="program-content">
               <div class="program-title">Panel: Turning hopes, goals and plans into accomplishments. Are we getting things done? How can we get things done?</div>
               <div class="program-speaker">We will reflect these topics via recent events</div>
+              <ul class="panelists">
+                <li>
+                  <a class="panelist" href="https://www.linkedin.com/in/ross-bailey-b1435a19/" target="_blank" rel="noopener" aria-label="Ross Bailey on LinkedIn">
+                    <img class="panelist-avatar" src="img/ross.webp" alt="" width="56" height="56" loading="lazy">
+                    <span class="panelist-info">
+                      <span class="panel-label">Moderator</span>
+                      <span class="panelist-name">Ross Bailey</span>
+                      <span class="panelist-role">Lead OT Cyber Security, Fortum</span>
+                    </span>
+                    <svg class="panelist-linkedin" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="panelist" href="https://www.linkedin.com/in/lasse-larsson/" target="_blank" rel="noopener" aria-label="Lasse Larsson on LinkedIn">
+                    <img class="panelist-avatar" src="img/lasse.webp" alt="" width="56" height="56" loading="lazy">
+                    <span class="panelist-info">
+                      <span class="panelist-name">Lasse Larsson</span>
+                      <span class="panelist-role">CEO, Energi-CERT</span>
+                    </span>
+                    <svg class="panelist-linkedin" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="panelist" href="https://www.linkedin.com/in/robmichaellee/" target="_blank" rel="noopener" aria-label="Robert M. Lee on LinkedIn">
+                    <img class="panelist-avatar" src="img/robert.webp" alt="" width="56" height="56" loading="lazy">
+                    <span class="panelist-info">
+                      <span class="panelist-name">Robert M. Lee</span>
+                      <span class="panelist-role">CEO, Dragos</span>
+                    </span>
+                    <svg class="panelist-linkedin" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="panelist" href="https://www.linkedin.com/in/juhani-eronen-18b2523/" target="_blank" rel="noopener" aria-label="Juhani Eronen on LinkedIn">
+                    <img class="panelist-avatar" src="img/juhani.webp" alt="" width="56" height="56" loading="lazy">
+                    <span class="panelist-info">
+                      <span class="panelist-name">Juhani Eronen</span>
+                      <span class="panelist-role">Chief Specialist, National Cyber Security Centre Finland</span>
+                    </span>
+                    <svg class="panelist-linkedin" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="program-item">
@@ -532,6 +661,9 @@
       </a>
       <a href="https://remod.fi/" target="_blank" rel="noopener" title="Remod">
         <img src="img/remodlogo.svg" alt="Remod logo">
+      </a>
+      <a href="https://www.dragos.com/" target="_blank" rel="noopener" title="Dragos">
+        <img src="img/dragos.png" alt="Dragos logo">
       </a>
     </div>
   </footer>
