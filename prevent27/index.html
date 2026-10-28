@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prevent 2027 - Save the date</title>
+  <meta name="description" content="Prevent27: coffee, cyber and good company. The warm-up before Disobey. Friday 19 February 2027, Helsinki." />
+  <meta name="author" content="ScanABC" />
+  <meta property="og:title" content="Prevent 2027 - Save the date" />
+  <meta property="og:description" content="Prevent27: coffee, cyber and good company. The warm-up before Disobey. Friday 19 February 2027, Helsinki." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.scanabc.com/prevent27/img/social-opengraph.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@scanabc" />
+  <meta name="twitter:image" content="https://www.scanabc.com/prevent27/img/social-opengraph.jpg" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #1e40af;
+      --foreground: #0f172a;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background-color: var(--foreground);
+      color: white;
+      line-height: 1.6;
+      font-size: 18px;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 24px;
+      background: linear-gradient(rgba(0, 20, 60, 0.75), rgba(0, 40, 80, 0.85)), url('img/prevent26-yleiso.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero-eyebrow {
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      opacity: 0.85;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-subtitle {
+      font-size: 1.6rem;
+      opacity: 0.9;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+
+    .hero-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: var(--primary);
+      padding: 18px 50px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background: #f1f5f9;
+      transform: translateY(-2px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.3rem;
+      }
+
+      .hero-details {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Save the date</p>
+      <h1>Prevent 2027</h1>
+      <p class="hero-subtitle">Coffee, cyber and good company: the warm-up before Disobey.</p>
+      <div class="hero-details">
+        <span>📅 Friday 19 February 2027</span>
+        <span>📍 Helsinki</span>
+      </div>
+      <a href="prevent27-save-the-date.ics" download class="btn">Add to calendar</a>
+    </div>
+  </section>
+</body>
+</html>
